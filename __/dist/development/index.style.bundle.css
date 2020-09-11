@@ -1,0 +1,55 @@
+.zr-random-captcha .rnc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 255px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.zr-random-captcha .rnc-row {
+  display: flex;
+  align-items: stretch;
+  margin: 0 0 10px 0;
+}
+.zr-random-captcha .rnc-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 0 10px;
+}
+.zr-random-captcha .rnc-canvas {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.zr-random-captcha .rnc-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background: #fff;
+  color: inherit;
+  border: none;
+  padding: 0;
+  width: 25px;
+  height: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.zr-random-captcha .rnc-button svg {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+.zr-random-captcha .rnc-input {
+  border: none;
+  padding: 0 11px;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #46474A;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL2Rpc3QvZGV2ZWxvcG1lbnQvaW5kZXguc3R5bGUuYnVuZGxlLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/

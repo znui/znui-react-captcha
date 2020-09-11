@@ -1,0 +1,12 @@
+.idea/*
+.DS_Store
+.git
+example/*
+node_modules/*
+src/*
+__/development.js
+__/production.js
+.babelrc
+.gitignore
+.npmignore
+package-lock.json

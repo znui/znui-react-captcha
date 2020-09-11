@@ -1,0 +1,34 @@
+{
+  "name": "znui-react-captcha",
+  "version": "1.0.1",
+  "description": "Web captcha component.",
+  "main": "index.js",
+  "scripts": {
+    "clean-example": "rimraf ./example/www",
+    "clean-exports": "rimraf ./__/build/ && rimraf ./__/dist/",
+    "zr.start": "rimraf ./example/www && webpack-dev-server --config ./example/development.js --znui-react.path ../../ --watch",
+    "zr.example": "rimraf ./example/www && webpack --config ./example/production.js --znui-react.path ../../",
+    "zr.prod.dist": "rimraf ./__/dist/production && webpack --config ./__/production.js --znui-react.path ../../ --uglify",
+    "zr.prod.dist.watch": "rimraf ./__/dist/production && webpack --config ./__/production.js --znui-react.path ../../  --uglify --watch",
+    "zr.prod.build": "rimraf ./__/build && babel src -d __/build/",
+    "zr.prod.build.watch": "rimraf ./__/build && babel src -d __/build/ --watch",
+    "zr.dev.dist": "rimraf ./__/dist/development && webpack --config ./__/development.js --znui-react.path ../../",
+    "zr.dev.dist.watch": "rimraf ./__/dist/development && webpack --config ./__/development.js --znui-react.path ../../ --watch",
+    "zr.release": "npm run zr.prod.build && npm run zr.prod.dist && npm run zr.dev.dist",
+    "zr.release.watch": "npm run zr.prod.build.watch && npm run zr.prod.dist.watch && npm run zr.dev.dist.watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/znui/znui-react-captcha.git"
+  },
+  "keywords": [
+    "web component",
+    "filter"
+  ],
+  "author": "yangyxu",
+  "email": "xuyy0618@qq.com",
+  "license": "MIT",
+  "devDependencies": {
+    "znui-react": "latest"
+  }
+}
