@@ -97,8 +97,6 @@ module.exports = React.createClass({
     ctx.closePath();
   },
   playAudio: function playAudio() {
-    console.log(this.state.solution);
-
     if (this.state.solution) {
       var audio = new SpeechSynthesisUtterance(this.state.solution.toString().split('').join(' '));
       audio.rate = 1;
