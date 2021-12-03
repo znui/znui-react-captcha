@@ -119,6 +119,10 @@ module.exports = React.createClass({
     });
     event.value = event.checked = checked;
     this.props.onChange && this.props.onChange(event, this);
+
+    if (checked) {
+      this.props.onChecked && this.props.onChecked(event, this);
+    }
   },
   render: function render() {
     var _this2 = this;
